@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_content_cta_half_images",
+  "info": {
+    "name": "CTA Half Image",
+    "icon": "file-image",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "string",
+      "required": true
+    },
+    "Strapline": {
+      "type": "string"
+    },
+    "Summary": {
+      "type": "text",
+      "required": true
+    },
+    "Cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "Button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.button"
+    }
+  }
+}

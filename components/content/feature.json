@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_content_features",
+  "info": {
+    "name": "Feature",
+    "icon": "asterisk",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "string",
+      "required": true
+    },
+    "Summary": {
+      "type": "text",
+      "required": true
+    },
+    "Icon": {
+      "type": "enumeration",
+      "enum": [
+        "CloudUpload",
+        "LockClosed",
+        "Refresh",
+        "ShieldCheck",
+        "Cog",
+        "Server"
+      ],
+      "required": true
+    }
+  }
+}

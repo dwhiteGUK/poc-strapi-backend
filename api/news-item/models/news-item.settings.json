@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_items",
+  "info": {
+    "name": "News Item",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "Heading": {
+      "type": "string",
+      "required": true
+    },
+    "Summary": {
+      "type": "string"
+    },
+    "Body": {
+      "type": "richtext",
+      "required": true
+    },
+    "news_category": {
+      "model": "news-category"
+    }
+  }
+}

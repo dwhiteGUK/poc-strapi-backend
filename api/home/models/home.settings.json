@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "name": "Home",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Content": {
+      "type": "dynamiczone",
+      "components": [
+        "content.quote",
+        "content.hero-full-width-image",
+        "content.section-intro",
+        "content.feature-grid",
+        "content.cta-half-image",
+        "content.news-grid",
+        "content.hero-with-right-image"
+      ]
+    }
+  }
+}

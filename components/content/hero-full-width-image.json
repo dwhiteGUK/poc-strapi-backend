@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_content_hero_full_width_images",
+  "info": {
+    "name": "Hero - Full Width Image",
+    "icon": "image",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "Intro": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.section-intro"
+    }
+  }
+}

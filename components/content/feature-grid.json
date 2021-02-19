@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_content_feature_grids",
+  "info": {
+    "name": "Feature Grid",
+    "icon": "grip-horizontal",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Intro": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.section-intro"
+    },
+    "Feature": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.feature",
+      "required": true,
+      "max": 6,
+      "min": 3
+    }
+  }
+}

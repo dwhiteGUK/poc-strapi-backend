@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_content_buttons",
+  "info": {
+    "name": "Button",
+    "icon": "genderless"
+  },
+  "options": {},
+  "attributes": {
+    "Text": {
+      "type": "string",
+      "required": true
+    },
+    "Link": {
+      "type": "string"
+    },
+    "Icon": {
+      "type": "enumeration",
+      "enum": [
+        "ExternalLink"
+      ]
+    }
+  }
+}

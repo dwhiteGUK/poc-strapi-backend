@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_content_hero_with_right_images",
+  "info": {
+    "name": "Hero with right image",
+    "icon": "child"
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "string",
+      "required": true
+    },
+    "Summary": {
+      "type": "text",
+      "required": true
+    },
+    "Cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}
