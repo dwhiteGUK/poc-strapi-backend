@@ -11,7 +11,11 @@
   },
   "devDependencies": {},
   "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.2.0",
+    "@tailwindcss/typography": "^0.4.0",
     "knex": "<0.20.0",
+    "remark": "^13.0.0",
+    "remark-html": "^13.0.1",
     "sqlite3": "latest",
     "strapi": "3.4.5",
     "strapi-admin": "3.4.5",
