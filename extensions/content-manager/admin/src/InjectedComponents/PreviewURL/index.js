@@ -52,7 +52,6 @@ function PreviewURL() {
     "/plugins/content-manager/:collectionType/:slug/:id"
   );
   const id = get(url, "params.id", null);
-  console.log('🚀 ~ file: index.js ~ line 55 ~ PreviewURL ~ id', id)
 
   // if (slug !== "application::page.page" || id === "create") {
   //   return null;

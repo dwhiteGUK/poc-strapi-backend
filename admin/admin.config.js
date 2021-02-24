@@ -12,8 +12,6 @@ module.exports = {
         ),
       })
     );
-    // console.log(process.env.FRONTEND_URL)
-    // console.log(process.env.FRONTEND_PREVIEW_SECRET)
 
     return config;
   },
