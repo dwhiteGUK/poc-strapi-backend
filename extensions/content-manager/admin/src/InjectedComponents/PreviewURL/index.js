@@ -53,9 +53,9 @@ function PreviewURL() {
   );
   const id = get(url, "params.id", null);
 
-  // if (slug !== "application::page.page" || id === "create") {
-  //   return null;
-  // }
+  if (slug !== "application::page.page") {
+    return null;
+  }
   // Build the right preview URL based on the page status
   const previewURL = `${FRONTEND_URL}/api/preview?secret=${FRONTEND_PREVIEW_SECRET}&id=${id}`;
 
