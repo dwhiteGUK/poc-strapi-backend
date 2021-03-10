@@ -53,7 +53,7 @@ function PreviewURL() {
   );
   const id = get(url, "params.id", null);
 
-  if (slug !== "application::page.page") {
+  if (!slug.includes('application::news-item.news-item')) {
     return null;
   }
   // Build the right preview URL based on the page status
