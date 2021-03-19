@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "casino_pages",
+  "info": {
+    "name": "Casino Page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "intro": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.section-intro"
+    }
+  }
+}

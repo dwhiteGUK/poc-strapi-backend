@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/casino-page",
+      "handler": "casino-page.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/casino-page",
+      "handler": "casino-page.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/casino-page",
+      "handler": "casino-page.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

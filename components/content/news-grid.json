@@ -7,11 +7,6 @@
   },
   "options": {},
   "attributes": {
-    "Intro": {
-      "type": "component",
-      "repeatable": false,
-      "component": "content.section-intro"
-    },
     "news_items": {
       "collection": "news-item"
     }

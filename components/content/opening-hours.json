@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_content_opening_hours",
+  "info": {
+    "name": "opening hours",
+    "icon": "stopwatch"
+  },
+  "options": {},
+  "attributes": {
+    "open": {
+      "type": "time",
+      "required": true
+    },
+    "close": {
+      "type": "time"
+    },
+    "gaming": {
+      "type": "time"
+    }
+  }
+}

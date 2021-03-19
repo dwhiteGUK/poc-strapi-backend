@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_content_addresses",
+  "info": {
+    "name": "address",
+    "icon": "map-marked-alt"
+  },
+  "options": {},
+  "attributes": {
+    "address1": {
+      "type": "string",
+      "required": true
+    },
+    "address2": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "postcode": {
+      "type": "string",
+      "required": true
+    },
+    "county": {
+      "type": "string"
+    }
+  }
+}

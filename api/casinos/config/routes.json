@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/casinos",
+      "handler": "casinos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/casinos/count",
+      "handler": "casinos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/casinos/:id",
+      "handler": "casinos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/casinos",
+      "handler": "casinos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/casinos/:id",
+      "handler": "casinos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/casinos/:id",
+      "handler": "casinos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

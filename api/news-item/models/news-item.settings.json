@@ -33,6 +33,14 @@
     },
     "news_category": {
       "model": "news-category"
+    },
+    "casinos": {
+      "via": "news_items",
+      "collection": "casinos",
+      "dominant": true
+    },
+    "news_layout": {
+      "model": "news-layouts"
     }
   }
 }

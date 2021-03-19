@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "casinos",
+  "info": {
+    "name": "Casinos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "address": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.address"
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "content.hero-with-right-image",
+        "content.news-grid",
+        "content.cta-half-image",
+        "content.hero-full-width-image",
+        "content.section-intro",
+        "content.news-realation"
+      ]
+    },
+    "news_items": {
+      "collection": "news-item",
+      "via": "casinos"
+    },
+    "opening_hour": {
+      "via": "casinos",
+      "model": "opening-hours"
+    }
+  }
+}

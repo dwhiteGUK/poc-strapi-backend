@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/news-layouts",
+      "handler": "news-layouts.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/news-layouts/count",
+      "handler": "news-layouts.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/news-layouts/:id",
+      "handler": "news-layouts.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/news-layouts",
+      "handler": "news-layouts.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/news-layouts/:id",
+      "handler": "news-layouts.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/news-layouts/:id",
+      "handler": "news-layouts.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

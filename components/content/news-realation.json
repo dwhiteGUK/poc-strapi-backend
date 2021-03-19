@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_content_news_realations",
+  "info": {
+    "name": "News Realation",
+    "icon": "toilet-paper"
+  },
+  "options": {},
+  "attributes": {
+    "news_items": {
+      "collection": "news-item"
+    }
+  }
+}

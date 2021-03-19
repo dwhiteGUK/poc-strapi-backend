@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "opening_hours",
+  "info": {
+    "name": "Opening Hours",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "open": {
+      "type": "time",
+      "required": true
+    },
+    "close": {
+      "type": "time"
+    },
+    "gaming": {
+      "type": "time"
+    },
+    "casinos": {
+      "collection": "casinos",
+      "via": "opening_hour"
+    }
+  }
+}
