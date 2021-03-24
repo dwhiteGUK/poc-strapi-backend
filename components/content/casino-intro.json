@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_content_casino_intros",
+  "info": {
+    "name": "Casino Intro",
+    "icon": "book-open"
+  },
+  "options": {},
+  "attributes": {
+    "address": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.address"
+    }
+  }
+}

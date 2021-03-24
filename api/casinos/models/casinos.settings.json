@@ -44,8 +44,13 @@
       "via": "casinos"
     },
     "opening_hour": {
+      "model": "opening-hours",
+      "via": "casinos"
+    },
+    "facilities": {
       "via": "casinos",
-      "model": "opening-hours"
+      "collection": "facilities",
+      "dominant": true
     }
   }
 }

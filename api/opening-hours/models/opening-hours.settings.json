@@ -22,8 +22,8 @@
       "type": "time"
     },
     "casinos": {
-      "collection": "casinos",
-      "via": "opening_hour"
+      "via": "opening_hour",
+      "collection": "casinos"
     }
   }
 }

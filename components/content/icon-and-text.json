@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_content_icon_and_texts",
+  "info": {
+    "name": "icon and text",
+    "icon": "bold"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string",
+      "required": true
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
