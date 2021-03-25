@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "news_categories",
   "info": {
-    "name": "News Category"
+    "name": "Whats On Category",
+    "description": ""
   },
   "options": {
     "increments": true,

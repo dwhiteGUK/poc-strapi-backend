@@ -40,17 +40,22 @@
       ]
     },
     "news_items": {
-      "collection": "news-item",
-      "via": "casinos"
+      "via": "casinos",
+      "collection": "news-item"
     },
     "opening_hour": {
       "model": "opening-hours",
       "via": "casinos"
     },
     "facilities": {
-      "via": "casinos",
       "collection": "facilities",
+      "via": "casinos",
       "dominant": true
+    },
+    "intro": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.casino-intro"
     }
   }
 }

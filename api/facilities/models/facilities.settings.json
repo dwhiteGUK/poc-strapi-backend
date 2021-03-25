@@ -12,8 +12,8 @@
   },
   "attributes": {
     "casinos": {
-      "collection": "casinos",
-      "via": "facilities"
+      "via": "facilities",
+      "collection": "casinos"
     },
     "icon": {
       "type": "string",

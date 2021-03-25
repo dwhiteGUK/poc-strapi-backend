@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "news_items",
   "info": {
-    "name": "News Item",
+    "name": "whats on",
     "description": ""
   },
   "options": {
@@ -35,8 +35,8 @@
       "model": "news-category"
     },
     "casinos": {
-      "via": "news_items",
       "collection": "casinos",
+      "via": "news_items",
       "dominant": true
     },
     "news_layout": {
