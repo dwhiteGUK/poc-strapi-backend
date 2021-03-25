@@ -31,17 +31,15 @@
     "content": {
       "type": "dynamiczone",
       "components": [
-        "content.hero-with-right-image",
         "content.news-grid",
-        "content.cta-half-image",
-        "content.hero-full-width-image",
-        "content.section-intro",
-        "content.news-realation"
+        "content.news-realation",
+        "content.gallery",
+        "content.whats-on"
       ]
     },
     "news_items": {
-      "via": "casinos",
-      "collection": "news-item"
+      "collection": "news-item",
+      "via": "casinos"
     },
     "opening_hour": {
       "model": "opening-hours",

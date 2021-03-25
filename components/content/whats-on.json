@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_content_whats_ons",
+  "info": {
+    "name": "Whats On",
+    "icon": "calendar-alt"
+  },
+  "options": {},
+  "attributes": {
+    "whats_ons": {
+      "collection": "whats-on"
+    }
+  }
+}

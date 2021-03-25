@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "news_layouts",
+  "collectionName": "whats_ons",
   "info": {
-    "name": "News layouts",
-    "description": ""
+    "name": "Whats on"
   },
   "options": {
     "increments": true,
@@ -11,10 +10,15 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "name": {
-      "type": "string"
+    "heading": {
+      "type": "string",
+      "required": true
     },
-    "layout": {
+    "strapline": {
+      "type": "string",
+      "required": true
+    },
+    "cover": {
       "model": "file",
       "via": "related",
       "allowedTypes": [

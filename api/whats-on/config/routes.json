@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/whats-ons",
+      "handler": "whats-on.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/whats-ons/count",
+      "handler": "whats-on.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/whats-ons/:id",
+      "handler": "whats-on.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/whats-ons",
+      "handler": "whats-on.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/whats-ons/:id",
+      "handler": "whats-on.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/whats-ons/:id",
+      "handler": "whats-on.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
