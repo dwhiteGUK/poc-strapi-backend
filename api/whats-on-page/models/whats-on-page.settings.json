@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "whats_on_pages",
+  "info": {
+    "name": "Whats On Page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "intro": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.section-intro",
+      "required": true
+    }
+  }
+}

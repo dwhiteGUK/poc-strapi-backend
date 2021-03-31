@@ -54,6 +54,10 @@
       "type": "component",
       "repeatable": false,
       "component": "content.casino-intro"
+    },
+    "whats_ons": {
+      "via": "casinos",
+      "collection": "whats-on"
     }
   }
 }

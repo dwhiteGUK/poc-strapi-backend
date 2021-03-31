@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/whats-on-page",
+      "handler": "whats-on-page.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/whats-on-page",
+      "handler": "whats-on-page.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/whats-on-page",
+      "handler": "whats-on-page.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

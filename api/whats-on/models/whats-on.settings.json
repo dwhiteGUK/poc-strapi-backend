@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "whats_ons",
   "info": {
-    "name": "Whats on"
+    "name": "Whats on",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -26,6 +27,15 @@
       ],
       "plugin": "upload",
       "required": true
+    },
+    "regions": {
+      "collection": "regions",
+      "via": "whats_on"
+    },
+    "casinos": {
+      "collection": "casinos",
+      "via": "whats_ons",
+      "dominant": true
     }
   }
 }

@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "regions",
+  "info": {
+    "name": "Regions"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "whats_on": {
+      "via": "regions",
+      "model": "whats-on"
+    }
+  }
+}
