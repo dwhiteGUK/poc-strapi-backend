@@ -17,7 +17,7 @@
     },
     "strapline": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "cover": {
       "model": "file",
@@ -39,6 +39,12 @@
     },
     "category": {
       "model": "category"
+    },
+    "category_fields": {
+      "type": "dynamiczone",
+      "components": [
+        "whats-on.tournament"
+      ]
     }
   }
 }

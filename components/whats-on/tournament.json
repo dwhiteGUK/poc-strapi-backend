@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_whats_on_tournaments",
+  "info": {
+    "name": "tournament",
+    "icon": "trophy"
+  },
+  "options": {},
+  "attributes": {
+    "start_date": {
+      "type": "datetime"
+    },
+    "end_date": {
+      "type": "datetime"
+    }
+  }
+}
