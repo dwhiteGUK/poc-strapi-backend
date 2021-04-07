@@ -15,10 +15,6 @@
       "type": "string",
       "required": true
     },
-    "strapline": {
-      "type": "string",
-      "required": false
-    },
     "cover": {
       "model": "file",
       "via": "related",
@@ -43,8 +39,12 @@
     "category_fields": {
       "type": "dynamiczone",
       "components": [
-        "whats-on.tournament"
-      ]
+        "whats-on.tournament",
+        "whats-on.promotion"
+      ],
+      "max": 1,
+      "min": 1,
+      "required": true
     }
   }
 }

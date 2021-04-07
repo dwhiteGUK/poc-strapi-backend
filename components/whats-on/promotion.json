@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_whats_on_promotions",
+  "info": {
+    "name": "promotion",
+    "icon": "volume-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "strapline": {
+      "type": "string"
+    }
+  }
+}
