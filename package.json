@@ -11,21 +11,19 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@tailwindcss/aspect-ratio": "^0.2.0",
-    "@tailwindcss/typography": "^0.4.0",
     "knex": "<0.20.0",
     "remark": "^13.0.0",
     "remark-html": "^13.0.1",
     "sqlite3": "latest",
-    "strapi": "3.4.5",
-    "strapi-admin": "3.4.5",
-    "strapi-connector-bookshelf": "3.4.5",
-    "strapi-plugin-content-manager": "3.4.5",
-    "strapi-plugin-content-type-builder": "3.4.5",
-    "strapi-plugin-email": "3.4.5",
-    "strapi-plugin-upload": "3.4.5",
-    "strapi-plugin-users-permissions": "3.4.5",
-    "strapi-utils": "3.4.5"
+    "strapi": "3.5.4",
+    "strapi-admin": "3.5.4",
+    "strapi-connector-bookshelf": "3.5.4",
+    "strapi-plugin-content-manager": "3.5.4",
+    "strapi-plugin-content-type-builder": "3.5.4",
+    "strapi-plugin-email": "3.5.4",
+    "strapi-plugin-upload": "3.5.4",
+    "strapi-plugin-users-permissions": "3.5.4",
+    "strapi-utils": "3.5.4"
   },
   "author": {
     "name": "A Strapi developer"
