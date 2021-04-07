@@ -36,6 +36,9 @@
       "collection": "casinos",
       "via": "whats_ons",
       "dominant": true
+    },
+    "category": {
+      "model": "category"
     }
   }
 }
