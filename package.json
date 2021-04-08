@@ -12,6 +12,7 @@
   "devDependencies": {},
   "dependencies": {
     "knex": "<0.20.0",
+    "react-beautiful-dnd": "^13.1.0",
     "remark": "^13.0.0",
     "remark-html": "^13.0.1",
     "sqlite3": "latest",

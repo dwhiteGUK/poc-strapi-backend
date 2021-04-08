@@ -45,6 +45,11 @@
       "max": 1,
       "min": 1,
       "required": true
+    },
+    "position": {
+      "default": 1,
+      "unique": true,
+      "type": "integer"
     }
   }
 }
