@@ -39,19 +39,20 @@ const Col = styled.span`
   padding: 0 10px;
 `
 
-let originalOrder = [];
-
 const HomePage = () => {
   const [data, setData] = useState([])
+  const [originalOrder, setOriginalOrder] = useState([])
 
   useEffect(() => {
     const getData = async () => {
       const response = await request('/whats-ons?_sort=position:DESC', { method: 'GET' })
 
       setData(response)
-      response.forEach(item => originalOrder.push({ ...item }))
 
-      console.log('🚀 ~ originalOrder 1', originalOrder)
+      const originalOrderArr = []
+      response.forEach(item => originalOrderArr.push({ ...item }))
+
+      setOriginalOrder(originalOrderArr)
     }
     getData()
   }, [])
@@ -84,7 +85,11 @@ const HomePage = () => {
             label: 'Cancel',
             onClick: () => {
               console.log('🚀 ~ file: index.js ~ line 85 ~ HomePage ~ originalOrder', originalOrder)
-              setData([...originalOrder])
+
+              const orderBack = []
+              originalOrder.map(item => orderBack.push({ ...item }))
+
+              setData(orderBack)
             },
             color: 'cancel',
             type: 'button',
