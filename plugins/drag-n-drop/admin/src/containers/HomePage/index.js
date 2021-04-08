@@ -4,7 +4,7 @@
  *
  */
 
-import React, { memo, useEffect, useState } from 'react';
+import React, { memo, useEffect, useState, useRef } from 'react';
 import styled, { css } from 'styled-components';
 
 import { Header } from '@buffetjs/custom';
@@ -39,14 +39,16 @@ const Col = styled.span`
   padding: 0 10px;
 `
 
-const HomePage = (props) => {
+const HomePage = () => {
   const [data, setData] = useState([])
+  const originalData = useRef()
 
   useEffect(() => {
     const getData = async () => {
       const response = await request('/whats-ons?_sort=position:DESC', { method: 'GET' })
 
       setData(response)
+      originalData.current = response
     }
     getData()
   }, [])
@@ -67,7 +69,7 @@ const HomePage = (props) => {
         actions={[
           {
             label: 'Cancel',
-            onClick: () => alert('Cancel button clicked'),
+            onClick: () => setData(originalData.current),
             color: 'cancel',
             type: 'button',
           },
@@ -85,7 +87,7 @@ const HomePage = (props) => {
 
       <DragDropContext onDragEnd={handleOnDragEnd}>
         <Droppable droppableId="dragItems">
-          {(provided, snapshot) => (
+          {(provided) => (
             <Ul
               {...provided.droppableProps}
               ref={provided.innerRef}
