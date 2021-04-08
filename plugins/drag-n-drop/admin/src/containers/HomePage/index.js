@@ -24,8 +24,8 @@ const Li = styled.li`
   list-style-type: none;
   margin: 10px 0;
   padding: 10px;
-  cursor: 'move',
-  background: ${({ theme, snapshot }) => theme.main.colors.white};
+  cursor: 'move';
+  background: ${({ theme }) => theme.main.colors.white};
   border-radius: ${({ theme }) => theme.main.sizes.borderRadius};
   box-shadow: 0 2px 4px #e3e9f3;
 
@@ -39,16 +39,19 @@ const Col = styled.span`
   padding: 0 10px;
 `
 
+let originalOrder = [];
+
 const HomePage = () => {
   const [data, setData] = useState([])
-  const originalData = useRef()
 
   useEffect(() => {
     const getData = async () => {
       const response = await request('/whats-ons?_sort=position:DESC', { method: 'GET' })
 
       setData(response)
-      originalData.current = response
+      response.forEach(item => originalOrder.push({ ...item }))
+
+      console.log('🚀 ~ originalOrder 1', originalOrder)
     }
     getData()
   }, [])
@@ -56,11 +59,21 @@ const HomePage = () => {
   function handleOnDragEnd(result) {
     if (!result.destination) return;
 
-    const items = Array.from(data);
+    const items = [...data];
     const [reorderedItem] = items.splice(result.source.index, 1);
-    items.splice(result.destination.index, 0, reorderedItem);
+
+    items.splice(result.destination.index, 0, {
+      ...reorderedItem,
+      position: result.destination.index + 1
+    })
+
+    items.map((item, index) => item.position = index + 1)
 
     setData(items);
+  }
+
+  function handleBulkUpdate() {
+    console.log(data);
   }
 
   return (
@@ -69,13 +82,16 @@ const HomePage = () => {
         actions={[
           {
             label: 'Cancel',
-            onClick: () => setData(originalData.current),
+            onClick: () => {
+              console.log('🚀 ~ file: index.js ~ line 85 ~ HomePage ~ originalOrder', originalOrder)
+              setData([...originalOrder])
+            },
             color: 'cancel',
             type: 'button',
           },
           {
             label: 'Save',
-            onClick: () => alert('Save button clicked'),
+            onClick: () => handleBulkUpdate(),
             color: 'success',
             type: 'submit',
           },
